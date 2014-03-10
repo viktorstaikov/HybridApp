@@ -1,0 +1,19 @@
+<div data-role="view" id="share" data-layout="default" data-transition="overlay:down" class="add-reservation-view"
+    data-init="app.AddReservation.init" data-show="app.AddReservation.show" data-model="app.AddReservation">
+    <header data-role="header">
+        <div data-role="navbar">
+            <h2>Reservation</h2>
+            <a class="nav-button nav-button-cancel" data-align="left" data-role="backbutton">Cancel</a>
+            <a class="nav-button nav-button-post" data-align="right" data-role="button" data-bind="click: saveReservation">Post</a>
+        </div>
+    </header>
+    <div id="enterStatus" class="share-form-wrp" data-role="listview" data-style="inset">
+        <div class="user-avatar">
+            <img data-bind="attr:{src: me.get('data').PictureUrl}" alt="styles/images/avatar.png" />
+        </div>
+        <h2 class="person-name" data-bind="text: me.get('data').DisplayName">Me</h2>
+        <div class="user-share">
+            <input id="numberOfSeatsInput" type="number"/>
+        </div>
+    </div>
+</div>

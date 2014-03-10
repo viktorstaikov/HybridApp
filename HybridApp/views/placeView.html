@@ -1,0 +1,19 @@
+<div data-role="view" id="single-place" data-layout="default" class="place-view" data-show="app.Place.show">
+    <header data-role="header">
+        <div data-role="navbar">
+            <h2 id="placeText">Info</h2>
+            <a class="nav-button nav-button-back hide-text" data-align="left" data-role="backbutton">Back</a>
+            <a class="nav-button nav-button-add hide-text" data-align="right" data-role="button" data-bind="click: app.Place.navigateToReservation">Add</a>
+        </div>
+    </header>
+
+    <div data-role="touch" class="cf">
+        <div class="user-avatar">
+            <img data-bind="attr:{src: PictureUrl()}" alt="styles/images/avatar.png" />
+        </div>
+        <div class="activity-content">
+            <h2 class="person-name"  data-bind='text: Name'></h2>
+            <a class="user-share-txt" data-bind="text: Address"></a>
+        </div>
+    </div>
+</div>
