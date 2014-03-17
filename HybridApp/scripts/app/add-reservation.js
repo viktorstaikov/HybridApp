@@ -17,6 +17,8 @@ app.AddReservation = (function () {
             
             validator = $('#enterStatus').kendoValidator().data("kendoValidator");
             $newStatus = $('#newStatus');
+            
+             $("#datepicker").kendoDatePicker();
         };
         
         var show = function (e) {
@@ -40,6 +42,7 @@ app.AddReservation = (function () {
                 reservation.CustomerId = app.Users.currentUser.get('data').Id;
                 reservation.PlaceId = app.Places.places.getByUid(placeUid).Id;
                 reservation.NumberOfSeats = $('#numberOfSeatsInput').val();
+                reservation.Date = $('#date').val();
                 
                 reservations.one('sync', function () {
                     app.mobileApp.navigate('#:back');

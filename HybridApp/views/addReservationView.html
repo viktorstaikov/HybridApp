@@ -1,5 +1,5 @@
 <div data-role="view" id="share" data-layout="default" data-transition="overlay:down" class="add-reservation-view"
-    data-init="app.AddReservation.init" data-show="app.AddReservation.show" data-model="app.AddReservation">
+     data-init="app.AddReservation.init" data-show="app.AddReservation.show" data-model="app.AddReservation">
     <header data-role="header">
         <div data-role="navbar">
             <h2>Reservation</h2>
@@ -12,8 +12,12 @@
             <img data-bind="attr:{src: me.get('data').PictureUrl}" alt="styles/images/avatar.png" />
         </div>
         <h2 class="person-name" data-bind="text: me.get('data').DisplayName">Me</h2>
-        <div class="user-share">
-            <input id="numberOfSeatsInput" type="number"/>
-        </div>
+        
+        <label for="numberOfSeatsInput" class="lbl">How many people?</label>
+        <input id="numberOfSeatsInput" type="number"/>
+
+        <label for="datepicker" class="lbl">When?</label>
+         
+        <input id="datepicker" value="10/10/2011" style="width:150px;" />
     </div>
 </div>

@@ -29,6 +29,14 @@ app.Reservations = (function () {
                 PlaceId: {
                     field: 'PlaceId',
                     defaultValue: null
+                },
+                Date:{
+                    field: 'Date',
+                    type: 'Date'
+                },
+                NumberOfSeats:{
+                    field: 'NumberOfSeats',
+                    type: 'Number'
                 }
             },
             CreatedAtFormatted: function () {
