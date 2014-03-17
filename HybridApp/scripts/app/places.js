@@ -72,7 +72,7 @@ app.Places = (function () {
 
         var show = function () {
             var filters = [];
-            var favourites = app.Users.currentUser.data.Favourites;
+            var favourites = app.Users.currentUser.data.Favourites || [];
             favourites.forEach(function(favourite){
                 filters.push({
                     field:'Id',
