@@ -70,7 +70,7 @@ app.Places = (function () {
     // Places view model
     var placesViewModel = (function () {
 
-        var show = function () {
+        var init = function () {
             var filters = [];
             var favourites = app.Users.currentUser.data.Favourites || [];
             favourites.forEach(function(favourite){
@@ -85,6 +85,7 @@ app.Places = (function () {
                 logic: 'or',
                 filters: filters 
             });
+            placesModel.places.read();
         };
         
         // Navigate to placeView When some place is selected
@@ -112,7 +113,7 @@ app.Places = (function () {
         return {
             places: placesModel.places,
             placeSelected: placeSelected,
-            show: show,
+            init: init,
             logout: logout
         };
         
