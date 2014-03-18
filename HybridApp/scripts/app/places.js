@@ -77,7 +77,7 @@ app.Places = (function () {
                 filters.push({
                     field:'Id',
                     operator: 'eq',
-                    value: favourite.Id
+                    value: favourite
                 });
             });
             
