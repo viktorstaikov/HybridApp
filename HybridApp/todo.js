@@ -1,5 +1,5 @@
 pictures urls - done
-add reservation view
-search places
+add reservation view - done
 
-cloud code <-- BIG THING
+search places/all places view
+style the app

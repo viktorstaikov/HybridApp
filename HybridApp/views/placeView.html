@@ -8,12 +8,13 @@
     </header>
 
     <div data-role="touch" class="cf">
-        <div class="user-avatar">
+        <div class="place-profile-picture">
             <img data-bind="attr:{src: PictureUrl()}" alt="styles/images/avatar.png" />
         </div>
-        <div class="activity-content">
-            <h2 class="person-name"  data-bind='text: Name'></h2>
-            <a class="user-share-txt" data-bind="text: Address"></a>
+        <div class="place-info">
+            <h2 class="place-name"  data-bind='text: Name'></h2>
+            <span class="place-address" data-bind="text: Address"></span>
+            <p class="place-description" data-bind="text: Description"></p>
         </div>
     </div>
 </div>

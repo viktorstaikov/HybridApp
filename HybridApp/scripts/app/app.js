@@ -126,8 +126,8 @@ var app = (function (win) {
     var mobileApp = new kendo.mobile.Application(document.body, {
         transition: 'slide',
         layout: 'mobile-tabstrip',
-        statusBarStyle: statusBarStyle,
-        skin: 'flat'
+        statusBarStyle: statusBarStyle/*,
+        skin: 'flat'*/
     });
     
     var getYear = (function () {

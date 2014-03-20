@@ -105,6 +105,9 @@ app.Places = (function () {
             
             app.helper.logout()
             .then(navigateHome, function (err) {
+                
+                localStorage.removeItem('cachedCreds')
+                
                 app.showError(err.message);
                 navigateHome();
             });

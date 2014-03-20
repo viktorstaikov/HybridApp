@@ -10,7 +10,7 @@
 
     <ul id="places-listview" data-style="inset" data-role="listview" data-template="placeTemplate"
         data-bind="source: places"></ul>
-    <p id="no-activities-span" hidden="hidden" class="no-items-msg">
+    <p id="no-places-span" hidden="hidden" class="no-items-msg">
         <b>You have no favourite places.</b><br /><br />Tap on the button to browse all available places.
     </p>
 </div>
@@ -18,12 +18,12 @@
 <!-- Activities ListView Template -->
 <script type="text/x-kendo-template" id="placeTemplate">
     <div data-role="touch" data-bind="events: { tap: placeSelected }" class="cf">
-        <div class="user-avatar">
+        <div class="place-profile-picture">
             <img data-bind="attr:{src: PictureUrl()}" alt="styles/images/avatar.png" />
         </div>
         <div class="activity-content">
-            <h2 class="person-name">${Name}</h2>
-            <a class="user-share-txt">${Address}</a>
+            <h2 class="place-name">${Name}</h2>
+            <a class="place-address">${Address}</a>
         </div>
     </div>
 </script>
